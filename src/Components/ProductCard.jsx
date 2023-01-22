@@ -6,14 +6,13 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import React from "react";
 import ReactStars from "react-rating-stars-component";
 
 import { useDispatch } from "react-redux";
-import { addToCart } from "../features/cartSlice";
+import { addToCart } from "../features/cart/cartSlice";
 
 function ProductCard({
-  product: { name, photoUrl, description, rating, price, id },
+  product: { name, photoUrl, description, rating, price, id, discount },
 }) {
   const dispatch = useDispatch();
   return (
@@ -62,7 +61,9 @@ function ProductCard({
             <Button
               variant="contained"
               color="primary"
-              onClick={() => dispatch(addToCart({ name, photoUrl, price, id }))}
+              onClick={() =>
+                dispatch(addToCart({ name, photoUrl, price, id, discount }))
+              }
             >
               Add to cart
             </Button>

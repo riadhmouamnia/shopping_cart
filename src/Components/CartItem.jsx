@@ -11,7 +11,7 @@ import {
   incrementQuantity,
   decrementQuantity,
   removeItem,
-} from "../features/cartSlice";
+} from "../features/cart/cartSlice";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 

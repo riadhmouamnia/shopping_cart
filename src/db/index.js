@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    name: "Bread",
+    name: "Whole french bread",
     price: 1.0,
     rating: 4.5,
     description: "made in paris and destinated to the whole word",
@@ -10,7 +10,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Milk",
+    name: "Fresh Suiss milk",
     price: 1.15,
     rating: 5,
     description:
